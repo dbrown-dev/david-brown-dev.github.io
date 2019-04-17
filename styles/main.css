@@ -1,84 +1,16 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -89,8 +21,7 @@ video {
     text-decoration: none;
 }
 
-body {
-    background-color: black;
+#home {
     background: url(../img/iceberg.jpg) no-repeat fixed;
     background-size: cover;
 }
@@ -107,6 +38,10 @@ nav {
     top: 0;
     left: 0;
 
+}
+
+nav img {
+    margin-left: 20px;
 }
 
 nav .menu {
@@ -132,12 +67,12 @@ nav .menu a {
 }
 
 .summary {
-    font-family: 'Playfair Display', serif;
-    font-size: 44px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 65px;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     color: seashell;
-    max-width: 900px;
+    width: 1200px;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -147,14 +82,24 @@ nav .menu a {
 
 #blog {
     background-color: white;
+    padding-bottom: 100px;
 }
 
-.blog-heading {
+.section-heading {
     color: black;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 65px;
     padding-top: 70px;
+}
+
+.section-heading p {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 .blog-squares-display {
@@ -194,6 +139,7 @@ nav .menu a {
     width: 50%;
     height: 30%;
     margin: auto;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .description {
@@ -215,7 +161,7 @@ nav .menu a {
 }
 
 #square2 {
-    background-image: url(../img/be-511557_640.jpg);
+    background-image: url(../img/question-1301144_640.png);
 }
 
 #square3 {
@@ -240,4 +186,44 @@ nav .menu a {
 
 #square8 {
     background-image: url(../img/mind-544404_640.png);
+}
+
+#contact {
+    background-color: #f6f6f6;
+    height: 400px;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;    
+}
+
+.social img{
+    width: 100px;
+}
+
+.contact-info {
+    display: table;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.contact-info img{
+    width: 70px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.contact-entry {
+    display: table-cell;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    vertical-align: middle;
+    text-decoration: none;
 }
