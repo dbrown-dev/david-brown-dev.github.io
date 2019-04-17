@@ -1,4 +1,4 @@
-html {
+html a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,11 +8,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-image: url(../img/background-ice.jpg);
-    background-size:60% auto;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: white;
+    background-color: black;
 }
 header {
     margin: 0;
@@ -21,3 +17,74 @@ header {
 h1{
     margin: 0;
  }
+
+ nav {
+    height: 50px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+nav .menu {
+    display: inline-block;
+    float: right;
+    margin-top: 15px
+}
+
+nav .menu p,a {
+    margin: 15px;
+    display: inline;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: 20px;
+    color: seashell;
+    text-decoration: none;
+}
+
+.banner {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.summary {
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: left;
+    color: seashell;
+    max-width: 650px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate( -5%, -20% );
+    display: block;
+}
+
+.banner img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.blog-squares-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.blog-square {
+    font-family: 'Ubuntu Mono', sans-serif;
+    text-align: left;
+    color: seashell;
+    width: 250px;
+    height: 250px;
+    border: solid;
+    border-color: seashell;
+    margin: 40px;
+}
