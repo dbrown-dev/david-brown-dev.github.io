@@ -41,6 +41,7 @@ nav {
 
 .navfixed {
     background-color: black;
+    z-index: 2;
 }
 
 nav img {
@@ -301,4 +302,20 @@ nav .menu a {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     padding: 25px 25px 30px 25px;
+}
+
+.article-content strong {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.article-content figure {
+    text-align: center;
+    margin: 30px;
+}
+
+.article-content figure img{
+    border: solid;
+    border-color: black;
 }
