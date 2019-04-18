@@ -1,3 +1,5 @@
+// Program to add listeners if on the homepage for the blog mouseover section
+// Declare variables for all required DOM elements by ID
 const blogSquare1 = document.getElementById('square1')
 const descriptionText1 = document.getElementById('description1')
 const blogHeading1 = document.getElementById('blog-heading1')
@@ -31,32 +33,44 @@ const descriptionText8 = document.getElementById('description8')
 const blogHeading8 = document.getElementById('blog-heading8')
 const blogOverlay8 = document.getElementById('blog-overlay8')
 
+
+//Create mouse over functionality for Blog preview squares
+// Build array with all DOM elements required inside for iteration
 const blogSquareArr = [
-  [blogSquare1, descriptionText1, blogHeading1, blogOverlay1],
-  [blogSquare2, descriptionText2, blogHeading2, blogOverlay2],
-  [blogSquare3, descriptionText3, blogHeading3, blogOverlay3],
-  [blogSquare4, descriptionText4, blogHeading4, blogOverlay4],
-  [blogSquare5, descriptionText5, blogHeading5, blogOverlay5],
-  [blogSquare6, descriptionText6, blogHeading6, blogOverlay6],
-  [blogSquare7, descriptionText7, blogHeading7, blogOverlay7],
-  [blogSquare8, descriptionText8, blogHeading8, blogOverlay8]
+    [blogSquare1, descriptionText1, blogHeading1, blogOverlay1],
+    [blogSquare2, descriptionText2, blogHeading2, blogOverlay2],
+    [blogSquare3, descriptionText3, blogHeading3, blogOverlay3],
+    [blogSquare4, descriptionText4, blogHeading4, blogOverlay4],
+    [blogSquare5, descriptionText5, blogHeading5, blogOverlay5],
+    [blogSquare6, descriptionText6, blogHeading6, blogOverlay6],
+    [blogSquare7, descriptionText7, blogHeading7, blogOverlay7],
+    [blogSquare8, descriptionText8, blogHeading8, blogOverlay8]
 ]
 
-const blogSquareClick = (description) => {
-  description.style.display = "block";
+//For loop to iterate over the array and add listeners for mouseover and mouseleave
+for (let i = 0; i < blogSquareArr.length; i++) {
+    blogSquareArr[i][0].addEventListener("mouseover", function () {
+        blogSquareArr[i][2].style.display = "none";
+        blogSquareArr[i][1].style.display = "block";
+        blogSquareArr[i][3].style.background = "rgba(0, 0, 0, 0.7)";
+        blogSquareArr[i][3].style.borderRadius = "15px";
+        blogSquareArr[i][3].style.height = "100%";
+    });
+    blogSquareArr[i][0].addEventListener("mouseleave", function () {
+        blogSquareArr[i][1].style.display = "none";
+        blogSquareArr[i][3].style.background = "";
+        blogSquareArr[i][2].style.display = "block";
+    });
 };
 
-for (let i = 0; i < blogSquareArr.length; i++) {
-  blogSquareArr[i][0].addEventListener("mouseover", function () {
-    blogSquareArr[i][2].style.display = "none";
-    blogSquareArr[i][1].style.display = "block";
-    blogSquareArr[i][3].style.background = "rgba(0, 0, 0, 0.7)";
-    blogSquareArr[i][3].style.borderRadius = "15px";
-    blogSquareArr[i][3].style.height = "100%";
-  });
-  blogSquareArr[i][0].addEventListener("mouseleave", function () {
-    blogSquareArr[i][1].style.display = "none";
-    blogSquareArr[i][3].style.background = "";
-    blogSquareArr[i][2].style.display = "block";
-  });
-};
+
+//Homepage nav bar soll listener turns background color to black after 50px
+const navbarScroll = () => {
+    if (document.body.scrollTop > 50) {
+        document.getElementById("navbar").style.backgroundColor = "black";
+    } else {
+        document.getElementById("navbar").style.backgroundColor = "";
+    }
+}
+
+window.addEventListener("scroll", navbarScroll)
