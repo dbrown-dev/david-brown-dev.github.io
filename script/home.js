@@ -74,3 +74,5 @@ const navbarScroll = () => {
 }
 
 window.addEventListener("scroll", navbarScroll)
+
+document.get

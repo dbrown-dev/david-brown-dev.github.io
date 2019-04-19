@@ -19,6 +19,20 @@ time, mark, audio, video {
     vertical-align: baseline;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+ul {
+    font-size: 18px;
+    padding: 20px 5px 5px 65px;
 }
 
 #home {
