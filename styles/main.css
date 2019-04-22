@@ -51,11 +51,12 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .navfixed {
     background-color: black;
-    z-index: 2;
+
 }
 
 nav img {
@@ -142,8 +143,6 @@ nav .menu a {
 }
 
 .blog-square {
-    font-family: 'Work Sans', sans-serif;
-    color: white;
     width: 300px;
     height: 250px;
     border-radius: 15px;
@@ -158,7 +157,9 @@ nav .menu a {
 .blog-square h2 {
     text-align: center;
     position: absolute;
+    color: white;
     border-radius: 15px;
+    padding: 0;
     top: 0;
     bottom: 0;
     left: 0;
@@ -171,6 +172,7 @@ nav .menu a {
 
 .description {
     display: none;
+    color: white;
     text-align: left;
     border-radius: 15px;
     position: absolute;
