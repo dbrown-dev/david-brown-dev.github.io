@@ -3,101 +3,187 @@
 <head>
   <title>David Brown - Web Developer</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="styles/reset.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:400,700" rel="stylesheet">
-
+  <script defer src="script/main.js"></script>
+  <script defer src="script/home.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  </body>
 </head>
 
 <body id="home">
   <header>
-    <nav id="navbar">
-      <a href="#home"><img src="img/logo.png"></a>
-      <div class="menu">
-        <a href="#blog">
-          <p id="navblog">Blog</p>
-        </a>
-        <a href="#projects">
-          <p id="navprojects">Projects</p>
-        </a>
-        <a href="#contact">
-          <p id="navcontact">Contact</p>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
   <main>
-    <div class="overlay">
-      <section class="banner">
-        <div class="summary">
-          <span>My journey to become a </span>
-          <span class="Orange-underline">Web Developer</span>
-          <span id="orange"> @ </span>
-          <span>Enspiral Dev Academy</span>
+    <div class="hero-image">
+      <div class="overlay">
+        <div class="container banner text-white">
+          <div class="row justify-content-center">
+            <div class="col-xl-6 align-self-center banner-text">
+              <span>My journey to become a </span>
+              <span class="orange-underline">Web Developer</span>
+              <span class="orange-text"> @ </span>
+              <span>Enspiral Dev Academy</span>
+            </div>
+          </div>
         </div>
-      </section>
-    </div>
-    <section id="blog">
-      <div class="section-heading">
-        <h1>My Learning Blog:</h1>
-        <p>The best place to find all of my musings from my week of Web Development</p>
       </div>
-      <div class="blog-squares-display" id="blog-squares-display">
-        <a id="square1" class="blog-square tech-blog" href="blog/sprint1-technical.html">
-          <h2>Git Software and GitHub</h2>
-          <p class="description">Sprint 1 Technical: This is a description of my blog entry. Once
-            I
-            have actually
-            written it this will make a lot more</p>
-        </a>
-        <a id="square2" class="blog-square cultural-blog" href="blog/sprint1-cultural.html">
-          <h2>Identity, Values, Strengths</h2>
-          <p class="description">Sprint 1 Cultural: This is a description of my blog entry. Once I
-            have actually
-            written it this will make a lot more</p>
-        </a>
-        <a id="square3" class="blog-square tech-blog" href="blog/sprint2-technical.html">
-          <h2 id="blog-heading3">Display: Inline vs Inline Block</h2>
-          <p class="description" id="description3">Sprint 2 Technical: I go into detail on the difference between inline
-            and inline-block and when to use each.</p>
-        </a>
-        <a id="square4" class="blog-square cultural-blog" href="blog/sprint2-cultural.html">
-          <h2 id="blog-heading4">My Learning Plan</h2>
-          <p class="description" id="description4">Sprint 2 Cultural: This is a description of my blog entry. Once I
-            have actually
-            written it this will make a lot more</p>
-        </a>
-        <a id="square5" class="blog-square tech-blog" href="blog/sprint3-technical.html">
-          <h2 id="blog-heading5">HTML, CSS and JavaScript</h2>
-          <p class="description" id="description5">Sprint 3 Technical: This is a description of my blog entry. Once
-            I
-            have actually
-            written it this will make a lot more</p>
-        </a>
-        <a id="square6" class="blog-square cultural-blog" href="blog/sprint3-cultural.html">
-          <h2 id="blog-heading6">Emotional Intelligence</h2>
-          <p class="description" id="description6">Sprint 3 Cultural: This is a description of my blog entry. Once I
-            have actually
-            written it this will make a lot more</p>
-        </a>
-        <a id="square7" class="blog-square tech-blog" href="blog/sprint4-technical.html">
-          <h2 id="blog-heading7">Problem Solving</h2>
-          <p class="description" id="description7">Sprint 4 Technical: This is a description of my blog entry. Once
-            I
-            have actually
-            written it this will make a lot more</p>
-        </a>
-        <a id="square8" class="blog-square cultural-blog" href="blog/sprint4-cultural.html">
-          <h2 id="blog-heading8">Neuroplasticity and Growth Mindset</h2>
-          <p class="description" id="description8">Sprint 4 Cultural: This is a description of my blog entry. Once I
-            have actually
-            written it this will make a lot more</p>
-        </a>
+    </div>
+    <section id="blog" class="section bg-light">
+      <div class="py-5">
+        <h1 class="section-heading">My Learning Blog:</h1>
+        <p class="section-sub-heading">The best place to find all of my musings from my week of Web Development</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-3 shadow">
+              <a href="blog/sprint1-technical.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="" src="img/github-universe.jpg">
+              </a>
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">Git Software and GitHub</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint1-cultural.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="" src="img/code-19052_640.jpg">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">Identity, Values, Strengths</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint2-technical.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="" src="img/cubes-447703_640.jpg">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">Display: Inline vs Inline Block</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint2-cultural.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="" src="img/thought-2123970_640.jpg">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">My Learning Plan</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint3-technical.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="Thumbnail [100%x225]"
+                  src="img/code-1839406_640.jpg">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">HTML, CSS and JavaScript</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint3-cultural.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="Thumbnail [100%x225]"
+                  src="img/brain-3017071_640.png">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">Emotional Intelligence</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint4-technical.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="Thumbnail [100%x225]"
+                  src="img/rubik-2477165_640.jpg">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">Problem Solving</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-dimensions zoom mb-4 shadow">
+              <a href="blog/sprint4-cultural.html" class="stretched-link">
+                <img class="card-img-top card-img-top-dimensions" alt="Thumbnail [100%x225]"
+                  src="img/mechanical-2033446_640.jpg">
+              </a>
+              <div class="card-body">
+                <p class="card-text text-center">Neuroplasticity and Growth Mindset</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="section-heading">
-        <h1>Contact Information</h1>
+      <div class="container py-5">
+        <h1 class="section-heading">Contact Information</h1>
       </div>
       <table class="contact-info">
         <tr>
@@ -131,7 +217,6 @@
 
 
   </main>
-  <script src="script/main.js"></script>
-<script src="script/home.js"></script>
 </body>
+
 </html>

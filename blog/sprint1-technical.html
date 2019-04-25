@@ -4,26 +4,51 @@
 <head>
   <title>Thoughts on Git and GitHub</title>
   <meta charset="UTF-8">
-  <link href="../styles/main.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../styles/reset.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <script defer src="script/main.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </head>
 
 <body>
   <header>
-    <nav class="navfixed">
-      <a href="../index.html"><img src="../img/logo.png"></a>
-      <div class="menu">
-        <a href="../index.html#blog">
-          <p id="navblog">Blog</p>
-        </a>
-        <a href="../index.html#projects">
-          <p id="navprojects">Projects</p>
-        </a>
-        <a href="../index.html#contact">
-          <p id="navcontact">Contact</p>
-        </a>
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg navfixed fixed-top" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-white menu-text" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white menu-text" href="../index.html#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white menu-text" href="../index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white menu-text" href="../index.html#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
   </header>
   <section class="blog-banner">
     <div class="blog-heading">

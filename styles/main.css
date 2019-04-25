@@ -1,82 +1,29 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    text-decoration: none;
+html {
     font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
 }
 
-h2 {
-    color: black;
-    font-weight: 700;
+/* Start: Navbar specific CSS */
+
+.navfixed {
+    background-color: hsl(0, 0%, 7%);
+}
+
+.menu-text {
     font-size: 20px;
-    padding-top: 50px;
-    padding-left: 25px;
 }
 
-ul {
-    font-size: 18px;
-    padding: 20px 5px 5px 65px;
-}
+/* End: Navbar specific CSS */
 
-#home {
+/* Start: Home Page Banner specific CSS */
+.hero-image {
     background: url(../img/iceberg.jpg) no-repeat fixed;
     background-size: cover;
+    background-position: top;
 }
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-nav {
-    height: 50px;
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.navfixed {
-    background-color: black;
-
-}
-
-nav img {
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
-nav .menu {
-    float: right;
-    margin-top: 15px
-}
-
-nav .menu p,
-nav .menu a {
-    margin: 15px;
-    display: inline;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
-    color: seashell;
-    padding-bottom: 3px;
 }
 
 .banner {
@@ -86,33 +33,51 @@ nav .menu a {
     text-align: center;
 }
 
-.summary {
-    font-family: 'Work Sans', sans-serif;
+.banner-text {
     font-size: 65px;
     font-weight: 700;
-    text-align: center;
-    color: white;
-    width: 1200px;
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-45%, -50%);
-    display: block;
+    transform: translate(-50%, -45%);
 }
 
-#orange {
+.orange-text {
     color: #F05408;
 }
 
-.Orange-underline {
-        text-decoration: underline;
-        text-decoration-color: #F05408;
+.orange-underline {
+    text-decoration: underline;
+    text-decoration-color: #F05408;
 }
 
-#blog {
-    background-color: white;
-    padding-bottom: 100px;
+/* End: Home Page Banner specific CSS */
+
+/* Start: Blog Post Squares Section specific CSS */
+
+.card-dimensions {
+    height: 300px;
 }
+
+.card-img-top-dimensions {
+    height: 225px; 
+    width: 100%; 
+    padding: 10px;
+    display: block; 
+    object-fit: cover;
+}
+
+.zoom {
+    transition: transform .1s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+/* End: Blog Post Squares Section specific CSS */
+
+/* Start: Homepage Headings */
 
 .section-heading {
     color: black;
@@ -120,133 +85,26 @@ nav .menu a {
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 65px;
-    padding-top: 70px;
 }
 
-.section-heading p {
+.section-sub-heading {
     color: black;
+    text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
     padding-top: 20px;
 }
 
-.blog-squares-display {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 0 auto;
+/* End: Homepage Headings */
 
-}
-
-.blog-square {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    margin: 40px;
-    font-size: 20px;
-    font-weight: 700;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-}
-
-.blog-square h2 {
-    text-align: center;
-    position: absolute;
-    color: white;
-    border-radius: 15px;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 30%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.description {
-    display: none;
-    color: white;
-    text-align: left;
-    border-radius: 15px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 90%;
-    height: 50%;
-    margin: auto;
-}
-
-#square1 {
-    background-image: url(../img/logo-2582757_640.png);
-}
-
-#square2 {
-    background-image: url(../img/question-1301144_640.png);
-}
-
-#square3 {
-    background-image: url(../img/lego-blocks-2458575_640.jpg);
-}
-
-#square4 {
-    background-image: url(../img/thought-2123970_640.jpg);
-}
-
-#square5 {
-    background-image: url(../img/code-1839406_640.jpg);
-}
-
-#square6 {
-    background-image: url(../img/brain-3017071_640.png);
-}
-
-#square7 {
-    background-image: url(../img/rubik-2477165_640.jpg);
-}
-
-#square8 {
-    background-image: url(../img/mind-544404_640.png);
-}
-
-#contact {
-    background-color: #f6f6f6;
-    height: 400px;
-    width: 100%;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.social-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 0 auto;    
-}
-
-.social img{
-    width: 100px;
-}
+/* Start: Contact section */
 
 .contact-info {
     display: table;
     text-align: center;
     width: 400px;
     margin: 0 auto;
-    padding-top: 30px;
-}
-
-.contact-info img{
-    width: 70px;
-    vertical-align: middle;
-    text-align: center;
 }
 
 .contact-entry {
@@ -254,18 +112,31 @@ nav .menu a {
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     vertical-align: middle;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
+.social-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.social img {
+    width: 100px;
+}
+
+/* End: Contact section */
 
 /* Blog Pages Specific */
 
 .blog-banner {
     height: 500px;
-    width: 65%;
+    width: 80%;
     border: solid;
     border-radius: 15px;
-    border-color: #F05408 ;
+    border-color: #F05408;
     border-width: 5px;
     margin: 0 auto;
     text-align: center;
@@ -306,17 +177,25 @@ nav .menu a {
 .article-content {
     position: relative;
     background-color: white;
-    top: -50px;
-    width: 50%;
+    top: -90px;
+    width: 60%;
     text-align: left;
     margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
 }
 
+.article-content h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 40px 10px 10px 10px;
+}
+
 .article-content p {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
-    padding: 25px 25px 30px 25px;
+    padding: 10px;
+    line-height: 1.5;
 }
 
 .article-content strong {
@@ -330,7 +209,21 @@ nav .menu a {
     margin: 30px;
 }
 
-.article-content figure img{
+.article-content figure img {
     border: solid;
     border-color: black;
+}
+
+/* All custom media queries */
+
+@media screen and (max-width: 1500px) {
+    .banner-text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner-text {
+        font-size: 40px;
+    }
 }

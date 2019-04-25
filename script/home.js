@@ -1,3 +1,15 @@
+//Homepage nav bar soll listener turns background color to black after 50px
+const navbarScroll = () => {
+    if (document.body.scrollTop > 50) {
+        document.getElementById("navbar").style.backgroundColor = "hsl(0, 0%, 7%)";
+    } else {
+        document.getElementById("navbar").style.backgroundColor = "";
+    }
+}
+
+window.addEventListener("scroll", navbarScroll)
+
+
 class BlogSquares {
     constructor() {
         this.squareIds = [];
@@ -33,13 +45,3 @@ blogSquares.squareIds.forEach(element => {
 
 
 
-//Homepage nav bar soll listener turns background color to black after 50px
-const navbarScroll = () => {
-    if (document.body.scrollTop > 50) {
-        document.getElementById("navbar").style.backgroundColor = "black";
-    } else {
-        document.getElementById("navbar").style.backgroundColor = "";
-    }
-}
-
-window.addEventListener("scroll", navbarScroll)
