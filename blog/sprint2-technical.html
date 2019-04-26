@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Thoughts on Git and GitHub</title>
+  <title>Display: Inline vs Inline Block</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -24,96 +24,120 @@
 
 <body>
   <header>
-      <nav class="navbar navbar-expand-lg navfixed fixed-top" id="navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link text-white menu-text" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white menu-text" href="../index.html#blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white menu-text" href="../index.html#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white menu-text" href="../index.html#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark navfixed navbar-fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="David Brown Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="../index.html#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="../index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white menu-text" href="../index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <section class="blog-banner">
-    <div class="blog-heading">
-      <h1>The CSS Display Property: Inline vs Inline-Block</h1>
-      <p>18 April 2019</p>
+  <section class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 align-items-center justify-content-center">
+        <div id="block-blog" class="jumbotron p-3 p-md-5 mt-5 text-white rounded bg-dark">
+          <div class="col-md-4 px-0">
+            <h1 class="display-4 font-italic overlay">CSS Display: Inline vs Inline-Block</h1>
+            <p class="lead my-3 overlay">A discussion on the differences between Inline and Inline Block display options
+              in CSS.</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="blog-img">
-      <img src="../img/lego-blocks-2458575_640.jpg" alt="">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 align-items-center justify-content-center">
+        <article class="article-content mb-5">
+          <p>
+            When you view a website on your computer or mobile phone, the browser (Google Chrome, Microsoft Edge,
+            Safari, Firefox etc)
+            needs to read in the website's code and interpret it in order to display the page for you to read. That code
+            is made up of two
+            key elements: HTML which is the structure and content and CSS which is a collection of rules that tell the
+            browser how that
+            content should be displayed. For example, whether the text is red or blue, big or small, just about every
+            potential display
+            option you can think of!
+          </p>
+          <p>
+            One of the rules that can be set in CSS is the <strong>display</strong> property. Everything on a website,
+            each part being known as an <strong>element</strong>,
+            can be configured with the display property. For this blog post I will be concentrating
+            on two important display property options; <strong>inline</strong> and <strong>inline-block</strong>. For
+            most elements, their default display setting is <strong>block</strong>.
+            This means that each element stacks on top of the next like a single width Lego tower, as seen below. Like
+            Lego blocks they
+            can have dimensions such as width and height so we can make them as big or small as needed.
+          </p>
+          <figure>
+            <img src="../img/block.PNG" alt="Figure A - CSS Display Block">
+            <figcaption>Figure A - CSS Display Block</figcaption>
+          </figure>
+          <p>
+            In order to place the elements next to each other we use either <strong>inline</strong> or
+            <strong>inline-block</strong>. When we use <strong>inline</strong>, as we can see below the
+            two elements of text will sit next to each other as opposed to on top of each other like when we use
+            <strong>block</strong>.
+          </p>
+          <figure>
+            <img src="../img/inline.PNG" alt="Figure B - CSS Display Inline">
+            <figcaption>Figure B - CSS Display Inline</figcaption>
+          </figure>
+          <p>
+            This is great when we need elements to appear right next to each other for example in a sentence however if
+            we did this with
+            every element, the website would soon become messy and unreadable because <strong>inline</strong> elements
+            don’t accept height and width. Even if you
+            tried to set it, the browser would just ignore it and when we try and move elements apart using padding to
+            give a bit more white space between them,
+            with <strong>inline</strong>, we don’t exactly get a great result.
+          </p>
+          <figure>
+            <img src="../img/inline-padding.PNG" alt="Figure C - CSS Display Inline with Padding">
+            <figcaption>Figure C - CSS Display Inline with Padding</figcaption>
+          </figure>
+          <p>
+            As you can see, we were able to push the second element out sideways but not up and down. In fact we just
+            end up making it worse by
+            masking the third line! Fortunately we have <strong>inline-block</strong> which solves this problem for us.
+            <strong>Inline-block</strong> allows elements to act like
+            blocks having width and height dimensions as well as enabling us to pad white space around them. They also
+            can fit on the same line together!
+          </p>
+          <figure>
+            <img src="../img/inline-block.PNG" alt="Figure D - CSS Display Inline-Block">
+            <figcaption>Figure D - CSS Display Inline-Block</figcaption>
+          </figure>
+          <p>
+            <strong>Inline</strong> and <strong>Inline-Block</strong> both seem similar due to solving the key problem
+            of putting elements next to each other. On closer
+            inspection however, they are very different with <strong>inline-block</strong> clearly the more powerful and
+            robust. In general I would recommend using
+            <strong>inline-block</strong> primarily as it will give you the flexibility to manipulate it like any other
+            element. Use <strong>inline</strong> only when you know you will not need to
+            set the dimensions or enable white space between elements.
+          </p>
+        </article>
+      </div>
     </div>
   </section>
-    <article class="article-content">
-      <p>
-        When you view a website on your computer or mobile phone, the browser (Google Chrome, Microsoft Edge, Safari, Firefox etc) 
-        needs to read in the website's code and interpret it in order to display the page for you to read. That code is made up of two 
-        key elements: HTML which is the structure and content and CSS which is a collection of rules that tell the browser how that 
-        content should be displayed. For example, whether the text is red or blue, big or small, just about every potential display 
-        option you can think of!
-      </p>
-      <p>
-        One of the rules that can be set in CSS is the <strong>display</strong> property. Everything on a website, each part being known as an <strong>element</strong>, 
-        can be configured with the display property. For this blog post I will be concentrating 
-        on two important display property options; <strong>inline</strong> and <strong>inline-block</strong>. For most elements, their default display setting is <strong>block</strong>. 
-        This means that each element stacks on top of the next like a single width Lego tower, as seen below. Like Lego blocks they 
-        can have dimensions such as width and height so we can make them as big or small as needed.
-      </p>
-      <figure>
-        <img src="../img/block.PNG" alt="Figure A - CSS Display Block">
-        <figcaption>Figure A - CSS Display Block</figcaption>
-      </figure>
-      <p>
-        In order to place the elements next to each other we use either <strong>inline</strong> or <strong>inline-block</strong>. When we use <strong>inline</strong>, as we can see below the 
-        two elements of text will sit next to each other as opposed to on top of each other like when we use <strong>block</strong>.
-      </p>
-      <figure>
-        <img src="../img/inline.PNG" alt="Figure B - CSS Display Inline">
-        <figcaption>Figure B - CSS Display Inline</figcaption>
-      </figure>
-      <p>
-        This is great when we need elements to appear right next to each other for example in a sentence however if we did this with 
-        every element, the website would soon become messy and unreadable because <strong>inline</strong> elements don’t accept height and width. Even if you 
-        tried to set it, the browser would just ignore it and when we try and move elements apart using padding to give a bit more white space between them, 
-        with <strong>inline</strong>, we don’t exactly get a great result.
-      </p>
-      <figure>
-        <img src="../img/inline-padding.PNG" alt="Figure C - CSS Display Inline with Padding">
-        <figcaption>Figure C - CSS Display Inline with Padding</figcaption>
-      </figure>
-      <p>
-        As you can see, we were able to push the second element out sideways but not up and down. In fact we just end up making it worse by 
-        masking the third line! Fortunately we have <strong>inline-block</strong> which solves this problem for us. <strong>Inline-block</strong> allows elements to act like 
-        blocks having width and height dimensions as well as enabling us to pad white space around them. They also can fit on the same line together!
-      </p>
-      <figure>
-        <img src="../img/inline-block.PNG" alt="Figure D - CSS Display Inline-Block">
-        <figcaption>Figure D - CSS Display Inline-Block</figcaption>
-      </figure>
-      <p>
-        <strong>Inline</strong> and <strong>Inline-Block</strong> both seem similar due to solving the key problem of putting elements next to each other. On closer 
-        inspection however, they are very different with <strong>inline-block</strong> clearly the more powerful and robust. In general I would recommend using 
-        <strong>inline-block</strong> primarily as it will give you the flexibility to manipulate it like any other element. Use <strong>inline</strong> only when you know you will not need to 
-        set the dimensions or enable white space between elements.
-      </p>
-    </article>
 </body>
-<script src="../script/main.js"></script>
 
 </html>
