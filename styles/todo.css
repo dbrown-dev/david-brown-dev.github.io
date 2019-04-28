@@ -1,0 +1,26 @@
+body {
+    background-color: rgba(240, 234, 234, 0.753);
+}
+
+#todosApp {
+    min-height: 500px;
+    background-color: white;
+}
+
+.todo-item-cell {
+    word-break: break-word;
+}
+
+.todo-delete-cell {
+    width: 70px;
+    text-align: center;
+}
+
+.todo-delete-cell button {
+    float: none;
+}
+
+.todo-toggle-cell {
+    width: 85px;
+    text-align: center;
+}

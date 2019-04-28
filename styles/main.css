@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: 'Work Sans', sans-serif;
     text-decoration: none;
     height: 100%;
@@ -8,8 +9,9 @@ html, body {
 
 #navbar {
     z-index: 2000;
-    
+
 }
+
 .navfixed {
     background-color: hsl(0, 0%, 7%);
 }
@@ -29,7 +31,7 @@ html, body {
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
 }
 
@@ -67,23 +69,30 @@ html, body {
 }
 
 .card-img-top-dimensions {
-    height: 225px; 
-    width: 100%; 
+    height: 225px;
+    width: 100%;
     padding: 10px;
-    display: block; 
+    display: block;
     object-fit: cover;
-    
+
 }
 
 .zoom {
-    transition: transform .1s; /* Animation */
-  }
-  
-  .zoom:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+    transition: transform .1s;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
 
 /* End: Blog Post Squares Section specific CSS */
+
+#projects {
+    background-image: url('../img/old-town-3890202_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
 
 /* Start: Homepage Headings */
 
@@ -106,43 +115,12 @@ html, body {
 
 /* End: Homepage Headings */
 
-/* Start: Contact section */
-
-.contact-info {
-    display: table;
-    text-align: center;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.contact-entry {
-    display: table-cell;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
-    vertical-align: middle;
-    text-decoration: none;  
-}
-
-.social-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.social img {
-    width: 100px;
-}
-
-/* End: Contact section */
-
 /* Blog Pages Specific */
 
-.jumbotron{
+.jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
-   }
+}
 
 .article-content {
     text-align: left;
@@ -242,7 +220,7 @@ html, body {
     .section-heading {
         font-size: 30px;
     }
-    
+
     .section-sub-heading {
         font-size: 18px;
     }
