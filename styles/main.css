@@ -88,10 +88,10 @@ body {
 /* End: Blog Post Squares Section specific CSS */
 
 #projects {
-    background-image: url('../img/old-town-3890202_1920.jpg');
+    background-image: url('../img/coding-1853305_1920.jpg');
     background-position: center;
     background-size: cover;
-    
+
 }
 
 /* Start: Homepage Headings */
@@ -223,5 +223,9 @@ body {
 
     .section-sub-heading {
         font-size: 18px;
+    }
+
+    .hero-image {
+        background-attachment: scroll;
     }
 }
