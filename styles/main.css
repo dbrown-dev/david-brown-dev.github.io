@@ -134,6 +134,12 @@ body {
     padding: 40px 10px 10px 10px;
 }
 
+.article-content h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+}
+
 .article-content p {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
