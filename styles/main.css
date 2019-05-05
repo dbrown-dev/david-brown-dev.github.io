@@ -17,7 +17,7 @@ body {
 }
 
 .menu-text {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Dosis', sans-serif;
     font-weight: 800;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .banner-text {
-    font-size: 65px;
+    font-size: 75px;
     font-family: 'Dosis', sans-serif;
     font-weight: 800;
     position: absolute;
@@ -104,7 +104,7 @@ body {
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .section-sub-heading {
@@ -112,7 +112,7 @@ body {
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 20px;
 }
 
