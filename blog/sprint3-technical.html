@@ -10,7 +10,7 @@
   <link href="../styles/reset.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
   <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  <script defer src="script/main.js"></script>
+  <script defer src="../script/main.js"></script>
   <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
@@ -50,21 +50,20 @@
       </div>
     </nav>
   </header>
-  <section class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-xl-6 align-items-center justify-content-center">
-        <div id="hcj-blog" class="jumbotron p-3 p-md-5 mt-5 text-white rounded bg-dark">
-          <div class="col-md-4 px-0">
-            <h1 class="display-4 font-italic overlay">HTML, CSS and JavaScript</h1>
-            <p class="lead my-3 overlay">In this entry I use a terrible analogy to describe HTML, CSS and JavaScript..
-            </p>
-          </div>
+  <section class="container-fluid p-0">
+    <div id="hcj-blog" class="container-fluid p-0 article-banner">
+    <div class="overlay d-flex justify-content-center align-items-center">
+        <div class="col-xl-6">
+          <h1 class="display-4 my-3 text-white Dosis text-center">HTML, CSS and JavaScript</h1>
+          <p class="lead my-3 text-white Dosis text-center">In this entry I use a terrible analogy to describe HTML, CSS and JavaScript..
+          </p>
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center m-0">
       <div class="col-xl-5 align-items-center justify-content-center">
         <article class="article-content mb-5">
+          <h2>The difference between HTML and CSS</h2>
           <p>I’m going to use a human body analogy to try and describe the relationships between HTML, CSS and
             JavaScript, hopefully without getting too gross! If a website is like a human then HTML would be all of the
             body parts. A human needs bones, organs, skin, muscles etc and HTML gives us the definition of what parts we
@@ -74,6 +73,7 @@
             size of the parts, colours, positioning relative to other parts etc and that’s where CSS comes in. The CSS
             of a human gives us all of the details about how we should look. If you have one arm shorter than the other,
             that’s CSS. I was born with different coloured eyes which is definitely a CSS quirk.</p>
+            <h2>JavaScript Control Flow</h2>
           <p>Finally we have JavaScript. JavaScript tells the body how to function and gives us the animation that
             brings a body to life (no religious/scientific offence intended, I did mention that this was a terrible
             analogy). Our human JavaScript program provides logic for how we as humans should operate. For example, in
@@ -85,14 +85,17 @@
             directly after brushing my teeth. But for how long do I eat? And if I’m running late should I eat at all?
             We can configure this in our human JavaScript program using loops and IF statements. Let’s say I am eating
             a bowl of oats in the morning, I can use a while loop to control my eating and when I stop: <code>While I am
-            still hungry, eat another spoonful of oats</code>. With this loop after each spoonful I will check again to see
+              still hungry, eat another spoonful of oats</code>. With this loop after each spoonful I will check again
+            to see
             if I’m still hungry and while I still am, I’ll continue to eat. I’ll stop only once I’m full and move onto
             the next activity.</p>
           <p>I eat oats because it’s quick in the morning but what if I have a bit of extra time? I might want to make
             some scrambled eggs! Well I can use an IF statement to control this. I can say in my human JavaScript
-            program: <code>If the time left before work is greater than 1 hour, make eggs, otherwise, make oats</code>. Here I have
+            program: <code>If the time left before work is greater than 1 hour, make eggs, otherwise, make oats</code>.
+            Here I have
             essentially said that if I have more than an hour before work, I’ve got time for some eggs but if that
             condition isn’t true and it’s say only 20 mins to go, I need to be making oats.</p>
+            <h2>JavaScript Functions</h2>
           <p>With these loops and if statements in our control flow we can start to build in a logic to our human
             JavaScript program to manage what we do in specific situations. When we have actions we repeat on a
             regular basis we can make these into functions. Functions in our human JavaScript program allow us to call
@@ -101,6 +104,7 @@
             years, I would need to have that human brush their teeth at least 60,000 times. Writing that same code out
             that many times is a waste when we can just continually reference the code which is how we can use
             functions to save code and time with repetitive tasks.</p>
+            <h2>The DOM, arrays and objects</h2>
           <p>My human analogy comes to an end now but I still need to cover two more topics for my blog this sprint:
             The DOM and accessing arrays and objects.</p>
           <ul>
@@ -112,7 +116,7 @@
 
               &lt;body&gt; element in an object format that our JavaScript program can easily reference and
               understand.</li>
-            <li>• An array is an object but an object is different from an array, or at least an array is a type of
+            <li>An array is an object but an object is different from an array, or at least an array is a type of
               object…. Confused? Well in simple terms, an array is like a list. My shopping list can easily be an
               array: Milk, bread, eggs, cheese etc. When we refer to an object in this context we are talking about a
               set of key/value pairs. For example, my pantry and its contents can be an object: Eggs: 12, Bread: 8

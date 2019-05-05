@@ -17,7 +17,9 @@ body {
 }
 
 .menu-text {
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
 }
 
 /* End: Navbar specific CSS */
@@ -44,7 +46,8 @@ body {
 
 .banner-text {
     font-size: 65px;
-    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -99,16 +102,16 @@ body {
 .section-heading {
     color: black;
     text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
     font-size: 50px;
 }
 
 .section-sub-heading {
     color: black;
     text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
     font-size: 20px;
     padding-top: 20px;
 }
@@ -117,14 +120,21 @@ body {
 
 /* Blog Pages Specific */
 
-.jumbotron {
+.article-content {
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.article-banner {
+    height: 400px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-content {
-    text-align: left;
-    font-family: 'Work Sans', sans-serif;
+.Dosis {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
 }
 
 .article-content h2 {
@@ -143,7 +153,7 @@ body {
 .article-content p {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
-    padding: 10px;
+    padding: 20px 10px;
     line-height: 1.5;
 }
 
@@ -172,42 +182,34 @@ body {
 
 #ivs-blog {
     background-image: url('../img/code-19052_640.jpg');
-    background-position: bottom;
 }
 
 #learning-blog {
-    background-image: url('../img/thought-2123970_640.jpg');
-    background-position: center;
+    background-image: url('../img/library-869061_1280.jpg');
 }
 
 #reflections-blog {
     background-image: url('../img/leather-jacket-690316_1920.jpg');
-    background-position: center;
 }
 
 #block-blog {
     background-image: url('../img/cubes-447703_640.jpg');
-    background-position: center;
 }
 
 #eq-blog {
     background-image: url('../img/brain-3017071_640.png');
-    background-position: center;
 }
 
 #hcj-blog {
-    background-image: url('../img/code-1839406_640.jpg');
-    background-position: center;
+    background-image: url('../img/colorful_code_1280.jpg');
 }
 
 #neuro-blog {
     background-image: url('../img/mechanical-2033446_640.jpg');
-    background-position: center;
 }
 
 #problem-blog {
     background-image: url('../img/rubik-2477165_640.jpg');
-    background-position: center;
 }
 
 /* All custom media queries */
